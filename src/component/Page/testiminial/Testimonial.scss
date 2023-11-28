@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins&family=Roboto:wght@300;400&family=Work+Sans:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+$bgcolor: black;
+$color1: #161616F7;
+$color2: #FF4400;
+$color3: #fff;
+$fonttext: 'Poppins', sans-serif;
+$fontsise : 18px;
+
+
+//testimonial
+.testimonial {
+    width: 100%;
+    background-color: $bgcolor;
+    padding-top: 120px;
+    padding-bottom: 20px;
+
+}
+
+.cardTestimonial {
+    margin: 40px;
+    padding: 10px 200px;
+}
+
+.temoin {
+    display: flex;
+    gap: 10px;
+
+}
+
+.testimonial2 {
+    margin-left: 10px;
+}
+
+.cardtemoingnage {
+    display: flex;
+    flex-direction: column;
+    background-color: $color1;
+    color: $color3;
+    padding: 50px;
+    gap: 10px;
+}
+
+.textAdress {
+    display: flex;
+    flex-direction: column;
+}
+
+.adressContact {
+    display: flex;
+    gap: 20px;
+}
+
+.h2textAdress {
+    color: $color3;
+}
+
+.h3textAdress {
+    color: $color1;
+}
+
+.inputEmail {
+    color: $color3;
+
+}
+
+.splide__arrow--prev {
+    left: 1em;
+    margin: 0 -50px;
+}
+
+.splide__arrow:disabled {
+    opacity: .3;
+    margin: 0px -50px;
+}
+
+@media(max-width:768px) {
+    .testimonial {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .cardTestimonial {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .cardtemoingnage {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        background-color: $color1;
+        color: $color3;
+        padding: 20px 5px;
+        gap: 5px;
+    }
+
+    .testimonial2 {
+        margin-left: 0px;
+    }
+
+    .splide__arrow--prev {
+        margin: 0px 10px;
+    }
+
+    .splide__arrow:disabled {
+        margin: 0px 10px;
+    }
+
+}
+
+//phone 425
+@media(max-width:425px) {
+
+    .cardTestimonial {
+        width: 100%;
+        gap: 0px;
+    }
+}

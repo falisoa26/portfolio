@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins&family=Roboto:wght@300;400&family=Work+Sans:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+$bgcolor: black;
+$color1: #161616F7;
+$color2: #FF4400;
+$color3: #fff;
+$fonttext: 'Poppins', sans-serif;
+$fontsise : 18px;
+
+
+//skills
+
+.skill {
+    width: 100%;
+    background-color: $bgcolor;
+    padding-top: 120px;
+    padding-bottom: 20px;
+}
+
+
+
+.mySkill {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px 300px;
+    gap: 20px;
+}
+
+.mySkillOne {
+    padding: 20px;
+    gap: 10px;
+    background-color: $color1;
+
+}
+
+.mySkillTwo {
+    padding: 20px;
+    background-color: $color1;
+
+}
+
+.linear {
+    margin: 20px;
+}
+
+.descriSkill {
+    display: flex;
+    justify-content: space-between;
+}
+
+.h3Skill {
+    color: $color3;
+    font-size: 20px;
+}
+
+//tablet 768
+@media(max-width:768px) {
+    .skill {
+        padding-top: 10px;
+    }
+
+    .mySkill {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 40px 10px;
+        gap: 10px;
+    }
+}
+
+//phone 425
+
+@media(max-width:425px) {
+
+    .mySkill {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 10px;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .h3Skill {
+        color: $color3;
+        font-size: 16px;
+    }
+    .skill {
+        padding-top: 20px;
+    }
+}

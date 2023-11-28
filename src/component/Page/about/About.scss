@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins&family=Roboto:wght@300;400&family=Work+Sans:wght@200;400;600&display=swap');
+
+// * {
+//     margin: 0;
+//     padding: 0;
+//     // text-decoration: none;
+//     list-style: none;
+// }
+
+$bgcolor: black;
+$color1: #161616F7;
+$color2: #FF4400;
+$color3: #fff;
+$fonttext: 'Poppins', sans-serif;
+$fontsise : 18px;
+
+
+
+//about 
+.intro {
+    width: 100%;
+    background-color: $bgcolor;
+    padding-top: 120px;
+    padding-bottom: 20px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.litletitle {
+    color: $color1;
+}
+
+.bigtitle {
+    display: flex;
+    gap: 10px;
+}
+
+.bigtitle1 {
+    color: $color3;
+}
+
+.bigtitle2 {
+    color: $color2;
+}
+
+.composeIntro {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 40px 300px;
+    gap: 40px;
+
+}
+
+.h2about {
+    font-size: 36px;
+}
+
+.h3about {
+    font-size: 20px;
+}
+
+.imgIntro {
+    grid-column: span 2;
+
+}
+
+.aboutIntro {
+    grid-column: span 2;
+    justify-content: center;
+}
+
+.aboutMe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.aboutabout {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.h3about {
+    color: $color3;
+}
+
+.h2about {
+    color: $color1;
+}
+
+.textAbout {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.Down {
+    width: 100px;
+    display: flex;
+    background-color: $color2;
+    color: $color3;
+    margin-top: 30px;
+    padding: 40px;
+}
+
+//tablet 768
+@media(max-width:768px) {
+    .intro {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .aboutMe {
+        padding-top: 0px;
+        margin-top: 10px;
+    }
+
+    .composeIntro {
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        gap: 0px;
+    }
+
+    .aboutabout {
+        gap: 0px;
+    }
+
+    .textAbout {
+        grid-column: span 2;
+        display: flex;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+}
+
+//phone 425
+
+@media(max-width:425px) {
+    .h2about {
+        font-size: 18px;
+    }
+
+    .h3about {
+        font-size: 16px;
+    }
+
+    .aboutMe {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0px;
+        gap: 10px;
+    }
+
+
+    .Down {
+        margin-top: 10px;
+
+    }
+
+    .textAbout {
+        padding-top: 0px;
+    }
+
+    .imgIntro {
+        margin-bottom: 10px;
+
+    }
+
+}

@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins&family=Roboto:wght@300;400&family=Work+Sans:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+$bgcolor: black;
+$color1: #161616F7;
+$color2: #FF4400;
+$color3: #fff;
+$fonttext: 'Poppins', sans-serif;
+$fontsise : 18px;
+
+
+// style hero
+.hero {
+    width: 100%;
+    height: 120vh;
+    background-color: $color1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.myImage {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.presentation {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.introduction {
+    color: $color3;
+}
+
+.myName {
+    display: flex;
+    gap: 10px;
+}
+
+.myJob {
+    display: flex;
+    gap: 10px;
+}
+
+.textHero {
+    width: 800;
+    color: $color3;
+}
+
+.h1part1 {
+    color: $color3;
+    font-size: 48px;
+}
+
+.h1part2 {
+    color: $color2;
+    font-size: 48px;
+
+}
+
+.h3 {
+    font-size: 20px;
+}
+
+//button
+.btn {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+
+}
+
+#btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 30px;
+    padding: 15px 50px;
+}
+
+
+
+.Hire {
+    background-color: $color2;
+}
+
+.Contact {
+    background-color: transparent;
+    border: 2px solid #FF4400;
+    color: $color2;
+}
+
+.btnmss {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color2;
+    color: $color3;
+    border-radius: 30px;
+    border: none;
+    padding: 15px 25px;
+}
+
+.nom {
+    font-size: 48px;
+    color: $color2;
+    font-weight: 600;
+}
+
+.job {
+    font-size: 48px;
+    color: $color3;
+    font-weight: 600;
+}
+
+@media(max-width:768px) {
+    .hero {
+        width: 100%;
+        height: 1100px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 120px;
+    }
+
+    .presentation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .textHero {
+        text-align: center;
+    }
+}
+
+@media(max-width:425px) {
+    .hero {
+        width: 425px;
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 120px;
+    }
+
+    .presentation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .textHero {
+        text-align: center;
+    }
+
+    .sariko {
+        width: 100%;
+    }
+
+    .job {
+        font-size: 28px;
+        font-weight: 400;
+    }
+
+    .nom {
+        font-size: 28px;
+        font-weight: 400;
+    }
+
+    .h3 {
+        font-size: 16px;
+    }
+
+    .h1part1 {
+        color: $color3;
+        font-size: 28px;
+    }
+
+    .h1part2 {
+        color: $color2;
+        font-size: 28px;
+
+    }
+
+    .btn {
+        display: flex;
+        flex-direction: column;
+    }
+}

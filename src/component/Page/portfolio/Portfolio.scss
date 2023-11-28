@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins&family=Roboto:wght@300;400&family=Work+Sans:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+$bgcolor: black;
+$color1: #161616F7;
+$color2: #FF4400;
+$color3: #fff;
+$fonttext: 'Poppins', sans-serif;
+$fontsise : 18px;
+
+
+//potfolio
+.portfolio {
+    width: 100%;
+    background-color: $bgcolor;
+    padding-top: 120px;
+
+
+}
+
+.containerPortfolio {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.imgPortfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+    margin: 20px 300px;
+}
+
+@media(max-width:768px) {
+    .portfolio {
+        padding-top: 20px;
+    }
+
+    .imgPortfolio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin: 10px;
+    }
+
+    .sariportfolio {
+        width: 100%;
+    }
+
+}
+
+//phone 425
+
+@media(max-width:425px) {
+    .imgPortfolio {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 10px;
+        padding: 10px;
+
+    }
+}

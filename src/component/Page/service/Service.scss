@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins&family=Roboto:wght@300;400&family=Work+Sans:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+$bgcolor: black;
+$color1: #161616F7;
+$color2: #FF4400;
+$color3: #fff;
+$fonttext: 'Poppins', sans-serif;
+$fontsise : 18px;
+
+
+
+//services
+
+.services {
+    width: 100%;
+    background-color: $bgcolor;
+    padding-top: 120px;
+    padding-bottom: 20px;
+
+}
+
+//card
+.cardServices {
+    display: flex;
+    flex-direction: column;
+}
+
+.card1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 20px 300px;
+    // opacity: 1;
+
+}
+
+.pub {
+    background-color: $color1;
+    color: $color3;
+    padding: 100px;
+    text-align: center;
+}
+
+//tablete 768
+@media(max-width:768px) {
+    .services {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 0px;
+
+    }
+
+    .card1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin: 20px 10px;
+
+    }
+
+}
+
+//phone 425
+
+@media(max-width:425px) {
+    .card1 {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px;
+        padding: 20px ;
+        gap: 20px;
+
+    }
+
+    .pub {
+        background-color: $color1;
+        color: $color3;
+        padding: 100px 80px;
+        text-align: center;
+    }
+
+}

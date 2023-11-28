@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins&family=Roboto:wght@300;400&family=Work+Sans:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+$bgcolor: black;
+$color1: #161616F7;
+$color2: #FF4400;
+$color3: #fff;
+$fonttext: 'Poppins', sans-serif;
+$fontsise : 18px;
+
+
+
+//contact
+.mycontact {
+    width: 100%;
+    background-color: $bgcolor;
+    padding-top: 120px;
+    padding-bottom: 20px;
+}
+
+.containerContact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 60px;
+}
+
+.Contactme {
+    grid-column: span 2;
+    margin: 0px 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputContact {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.h3Contact {
+    font-size: 20px;
+}
+
+.h2tetAdress {
+    font-size: 36px;
+    color: $color3;
+}
+
+.textoContact {
+    width: 700px;
+    color: $color1;
+    text-align: center;
+}
+
+.outlined-basic {
+    grid-column: span 2;
+    border-radius: 10px;
+    border: 2px solid;
+    background-color: $color1;
+    width: 600px;
+}
+
+.inputName {
+    color: $color3;
+}
+
+#inputMessage {
+    padding: 50px;
+}
+
+@media(max-width:768px) {
+    .mycontact {
+        padding-top: 20px;
+        // padding-bottom: 10px;
+    }
+
+    .containerContact {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px;
+    }
+
+    .Contactme {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        padding: 10px;
+        margin: 0px;
+    }
+
+    .inputContact {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0px;
+        margin: 20px;
+    }
+
+}
+
+//phone 425
+
+@media(max-width:425px) {
+
+    .h3Contact {
+        font-size: 16px;
+    }
+
+    .h2tetAdress {
+        font-size: 20px;
+
+    }
+
+    .outlined-basic {
+        grid-column: span 2;
+        border-radius: 10px;
+        border: 2px solid;
+        background-color: $color1;
+        width: 400px;
+    }
+
+    .inputContact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        padding: 0px;
+        ;
+    }
+
+    .textoContact {
+        width: 350px;
+    }
+
+
+
+
+}
