@@ -6,6 +6,7 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 $bgcolor: black;
@@ -88,7 +89,7 @@ a:hover {
         align-items: center;
         flex-direction: column;
         padding: 50px 0px;
-        margin-bottom:10px ;
+        margin-bottom: 10px;
         background-color: $color1;
         transition: all .55s ease;
         z-index: 1000px;
@@ -107,6 +108,6 @@ a:hover {
 
     .iconHeader {
         display: block;
-        padding:  0px 10px;
+        padding: 0px 10px;
     }
 }
